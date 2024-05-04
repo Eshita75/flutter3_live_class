@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 main(){
@@ -41,38 +41,45 @@ class Home extends StatelessWidget{
           }, icon: Icon(Icons.add)),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text('Eshita'),
-            Text('Mondol'),
-            Text('Magura'),
-            Text('Dhaka'),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Text('Greeting from '),
-                Text('Ovi'),
-                Column(
-                  children: [
-                    Row(
-                      children: [
-                        Icon(Icons.date_range),
-                        Text("Date"),
-                      ],
-                    ),
-                    Text('03/22/2024')
-                  ],
-                )
-              ],
-            )
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text('Eshita'),
+          Text("Mondol"),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Text('Greeting from '),
+              Text('Ovi'),
+              Column(
+                children: [
+                  Text("Date"),
+                  Text('03/22/2024')
+                ],
+              )
+            ],
+          ),
+
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Text('Greeting from '),
+              Text('Ovi'),
+              Column(
+                children: [
+                  Text("Date"),
+                  Text('03/22/2024')
+                ],
+              )
+            ],
+          )
+        ],
       ),
     );
   }
